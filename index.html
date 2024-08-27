@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devansh Vala - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <div>
+        <header>
+            <nav>
+                <ul style="display: flex;">
+                    <li style="margin-left: 10px;"><a href="#hero">Home</a></li>
+                    <li style="margin-left: 20px;"><a href="#about">About</a></li>
+                    <li style="margin-left: 20px;"><a href="#projects">Projects</a></li>
+                    <li style="margin-left: 20px;"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
+    <div>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>Devansh</span></h1>
+                <p>A creative <span>Software Engineer</span> passionate about crafting digital experiences.</p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+    <section id="about" data-aos="fade-up">
+        <h2>About Me</h2>
+        
+        <p>I'm a <strong>software engineer</strong> with a strong background in <strong>Java, ReactJS, C#.</strong> I love creating beautiful, functional Software, Website and applications.</p>    </section>
+
+        <hr>
+    <section id="projects" data-aos="fade-up">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-item" data-aos="zoom-in">
+                <img src="images/Project_thumbnail.png" alt="Project 1" width="200px" height="125px">
+                <h3>Virtual Garage</h3>
+                <p>A brief description of the project.</p>
+                <a href="https://github.com/Devansh78/Virtual-Garage" target="_blank" class="project-link">View Project</a>
+            </div>
+            <div class="project-item" data-aos="zoom-in">
+                <img src="images/zip-file.png" alt="Project 2">
+                <h3>ZipUnzipFolder</h3>
+                <p>A brief description of the project.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project-item" data-aos="zoom-in">
+                <img src="images/ayurveda.png" alt="Project 3">
+                <h3>VaidikSahay</h3>
+                <p>A brief description of the project.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input class="inpt" type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input class="inpt" type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea class="inpt" id="message" name="message" required></textarea>
+
+            <button class="cta-button" type="submit">Send</button>
+        </form>
+    </section>
+    <div class="centered-div">
+        <a href="https://wa.me/918450939344?text=Hello Devansh" target="_blank">
+            <img class="sclmda-icn" src="images/whatsapp.png" title="WhatsApp" alt="WhatsApp">
+        </a>               
+        <a href="https://www.linkedin.com/in/devansh-vala-9b367920b" target="_blank">
+            <img class="sclmda-icn" src="images/linkedin.png" title="LinkedIn" alt="LinkedIn">
+        </a>        
+        <a href="mailto:thedevanshvala@gmail.com" target="_blank">
+            <img class="sclmda-icn" src="images/email.png" title="Email" alt="Email">
+        </a>        
+        <a href=" https://github.com/Devansh78" target="_blank">
+            <img class="sclmda-icn" src="images/github.png" title="GitHub" alt="GitHub">
+        </a>     
+
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Devansh. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>
