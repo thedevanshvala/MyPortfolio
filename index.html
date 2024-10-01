@@ -10,16 +10,21 @@
 </head>
 <body>
     <div>
-        <header>
+        <header id="main-header">
+            <div class="logo">
+                <a href="#hero"> <!-- Or use "/" for home URL -->
+                    <img src="images/logo.png" alt="Logo" class="logo-img" style="margin-top: 2px;">
+                </a>                
+            </div>
             <nav>
                 <ul style="display: flex;">
-                    <li style="margin-left: 10px;"><a href="#hero">Home</a></li>
-                    <li style="margin-left: 20px;"><a href="#about">About</a></li>
-                    <li style="margin-left: 20px;"><a href="#projects">Projects</a></li>
-                    <li style="margin-left: 20px;"><a href="#contact">Contact</a></li>
+                    <li><a href="#hero">Home</a></li>
+                    <li title="This Will Show You My Resume"><a href="pages/aboutme.html">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </header>
+        </header>        
     </div>
     
     <div>
@@ -33,36 +38,19 @@
     </div>
 
     <hr>
-    <section id="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        
-        <p>I'm a <strong>software engineer</strong> with a strong background in <strong>Java, ReactJS, C#.</strong> I love creating beautiful, functional Software, Website and applications.</p>    </section>
-
-        <hr>
     <section id="projects" data-aos="fade-up">
         <h2>My Projects</h2>
-        <div class="project-grid">
-            <div class="project-item" data-aos="zoom-in">
-                <img src="images/Project_thumbnail.png" alt="Project 1" width="200px" height="125px">
-                <h3>Virtual Garage</h3>
-                <p>A brief description of the project.</p>
-                <a href="https://github.com/Devansh78/Virtual-Garage" target="_blank" class="project-link">View Project</a>
-            </div>
-            <div class="project-item" data-aos="zoom-in">
-                <img src="images/ayurveda.png" alt="Project 2">
-                <h3>WhatsMail</h3>
-                <p>A brief description of the project.</p>
-                <a href="https://github.com/thedevanshvala/WhatsMail" target="_blank" class="project-link">View Project</a>
-            </div>
-            <div class="project-item" data-aos="zoom-in">
-                <img src="images/zip-file.png" alt="Project 3">
-                <h3>ZipUnzipFolders</h3>
-                <p>A brief description of the project.</p>
-                <a href="https://github.com/thedevanshvala/ZipMaster" target="_blank" class="project-link">View Project</a>
-            </div>
+        
+        <!-- Project Grid -->
+        <div class="project-grid"></div>
+    
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <button id="prevBtn" disabled><</button>
+            <button id="seeAllBtn">See All</button>
+            <button id="nextBtn">></button>
         </div>
-    </section>
-
+    </section>        
     <hr>
 
     <section id="contact" data-aos="fade-up">
@@ -77,7 +65,7 @@
             <label for="message">Message:</label>
             <textarea class="inpt" id="message" name="message" required></textarea>
 
-            <button class="cta-button" type="submit">Send</button>
+            <button class="cta-button" type="submit" style="align-self: center; width: 140px;">Send</button>
         </form>
     </section>
     <div class="centered-div">
@@ -108,5 +96,6 @@
             once: true,
         });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

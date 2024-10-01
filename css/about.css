@@ -1,0 +1,73 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000; /* Set background color to black */
+    color: #f4f4f4; /* Set foreground text color for readability */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white; /* Dark gray for container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Lighter shadow for contrast */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #f4f4f4; /* Light text color for header */
+}
+
+.header .tagline {
+    font-size: 20px;
+    color: #dcdcdc; /* Lighter gray for tagline */
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #dcdcdc; /* Lighter gray for contact info */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #FEE715; /* Keep this color for headings */
+    border-bottom: 2px solid #FEE715;
+    padding-bottom: 5px;
+}
+
+.job, .edu-item {
+    margin-bottom: 15px;
+}
+
+.job h3, .edu-item h3 {
+    margin: 0;
+    color: #f4f4f4; /* Light text color for job titles */
+}
+
+.job ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #dcdcdc; /* Lighter gray for list items */
+}
+
+.languages ul {
+    list-style: none;
+    padding: 0;
+    color: #dcdcdc; /* Lighter gray for languages */
+}
+
+.skills ul {
+    padding-left: 20px;
+    color: #dcdcdc; /* Lighter gray for skills */
+}

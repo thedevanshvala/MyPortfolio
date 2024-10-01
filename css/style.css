@@ -32,43 +32,37 @@ body {
 header {
     background-color: #101820;
     position: fixed;
-    height: 40px;
-    padding: 10px;
-    padding-top: 20px;
-    padding-left: 20px;
-    width: 100%; /* Adjust width if needed */
-    right: 0; /* Align to the right */
-    top: 0; /* Align to the top */
+    width: 99%;
+    top: 0;
+    padding: 10px 20px;
     z-index: 1;
-}
-
-.inpt{
-    color: white;
-    background-color: black;
-}
-
-hr {
-    border: none; /* Removes the default border */
-    height: 1px; /* Sets the thickness of the line */
-    background-color: #2c333a; /* Sets the color to #101820 */
-    margin: 40px 0; /* Adds some space around the hr element */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
 
-header nav ul {
-    list-style: none;
-    text-align: center;
-    margin: 0;
-    padding: 10;
-    right: 0;
-}
-
-header nav li {
+.logo {
     margin-left: 10px;
 }
 
+.logo-img {
+    width: auto; /* Adjust size as needed */
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 header nav ul li {
-    margin: 0px 15px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
@@ -89,7 +83,6 @@ header nav ul li a:hover {
     width: 35px; 
     height: 35px;
 }
-
 .sclmda-icn:hover {
     width: 45px; 
     height: 45px;
@@ -102,11 +95,12 @@ header nav ul li a:hover {
     /* align-items: center; Center vertically */
 }
 
+
 /* Hero Section */
 #hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/hero-background.jpg') center/cover no-repeat;
     color: #fff;
-    height: 80vh;
+    height: 82vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,19 +154,36 @@ h2 {
 }
 
 /* Projects Section */
-#projects .project-grid {
+#projects {
+    max-width: 1000px;
+    height: auto;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    color: #FEE715;
+}
+
+.project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 25px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .project-item {
-    background: #101820;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(246, 3, 3, 0.1);
+    background-color: #101820;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     text-align: center;
     padding: 20px;
-    transition: transform 0.3s ease;
+    transform: scale(1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .project-item:hover {
@@ -180,23 +191,67 @@ h2 {
 }
 
 .project-item img {
-    max-width: 100%;
-    border-radius: 8px;
+    width: 150px;
+    height: 70px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-item h3 {
+    color: #FEE715;
+    font-size: 1.4em;
     margin-bottom: 10px;
+}
+
+.project-item p {
+    color: #ccc;
+    font-size: 1em;
+    margin-bottom: 15px;
 }
 
 .project-link {
     display: inline-block;
-    margin-top: 10px;
-    color: #FEE715;
-    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #FEE715;
+    color: #101820;
     font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .project-link:hover {
-    color: #c0392b;
+    background-color: #c0392b;
+    color: #fff;
 }
 
+.navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1.2em;
+    background-color: #FEE715;
+    color: #101820;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+    background-color: #c0392b;
+    color: white;
+}
+
+.navigation-buttons button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
 /* Contact Section */
 #contact form {
     display: flex;
@@ -247,5 +302,8 @@ footer {
 
     #projects .project-grid {
         grid-template-columns: 1fr;
+    }
+    #contact{
+        margin-right: 20px;
     }
 }
