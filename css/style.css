@@ -44,6 +44,8 @@ header {
 
 
 .logo {
+    display: flex;
+    align-items: center;
     margin-left: 10px;
 }
 
@@ -58,6 +60,7 @@ header nav ul {
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    gap: 20px;
     align-items: center;
 }
 
@@ -305,5 +308,19 @@ footer {
     }
     #contact{
         margin-right: 20px;
+    }
+}
+/* Media query for screen width less than 400px */
+@media (max-width: 740px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul {
+        justify-content: center;
+        gap: 0px;
+        margin: 0px;
+        padding: 0px;
     }
 }

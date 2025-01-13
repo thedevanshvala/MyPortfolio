@@ -37,7 +37,7 @@
         }
 
         .header .tagline {
-            font-size: 20px;
+            font-size: 1vw;
             color: #dcdcdc; /* Lighter gray for tagline */
         }
 
@@ -83,6 +83,24 @@
             padding-left: 20px;
             color: #dcdcdc; /* Lighter gray for skills */
         }
+        .logo-img {
+            width: 100%;              /* Makes the logo take full width of its container */
+            max-width: 30vw;         /* Limits the maximum width to prevent it from getting too large */
+            height: auto;             /* Maintains the aspect ratio of the logo */
+        }
+        @media (max-width: 640px) {
+    .contact-info {
+        flex-direction: column; /* Stacks the <p> elements vertically */
+        gap: 10px; /* Reduces the gap for better spacing on small screens */
+    }
+
+    .contact-info p {
+        margin-left: 0; /* Removes the left margin on small screens */
+    }
+    .tagline{
+        font-size: 40vw;
+    }
+}
     </style>
 </head>
 <body>
@@ -93,9 +111,9 @@
                     <img src="../images/logo.png" alt="Logo" class="logo-img" style="margin-top: 2px;">
                 </a>                
             </div>            
-            <h1 class="tagline" style="font-size: 34px;">&lt;Software Engineer/&gt;</h1>
+            <h1 class="tagline" style="font-size: 3vw;">&lt;Software Engineer/&gt;</h1>
             <div class="contact-info" style="display: flex; margin-top: 5px;">
-                <p><b>Email: </b> devansh@example.com</p>
+                <p><b>Email: </b> thedevanshvala@gmail.com</p>
                 <p style="margin-left: 20px;"><b>Phone:</b> +918450939344</p>
                 <p style="margin-left: 20px;"><b>Location:</b> Malad,Mumbai,India</p>
             </div>
